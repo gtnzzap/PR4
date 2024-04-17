@@ -27,7 +27,7 @@
                 <TextBox FontSize="30" Name="Surname" Width="191"/>
             </StackPanel>
             <DatePicker FontSize="25" x:Name="Birthday" Width="199" Height="62"/>
-            <Button FontSize="20" Width="133" Height="45" Content="OK" Click="Button_Click"/>
+            <Button FontSize="20" Width="133" Height="45" Content="Выполнить" Click="Button_Click"/>
         </StackPanel>
 
     </Grid>
