@@ -30,9 +30,12 @@ namespace WpfApp3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Person employee = new Person(Name.Text, Surname.Text);
+            string firstName = Name.Text;
+            string lastName = Surname.Text;
             DateTime dob = Birthday.SelectedDate.Value;
-            MessageBox.Show($"Имя: {Person.FirstName}\nФамилия: {Person.LastName}\nВозраст: {employee.Age(dob)} лет");
+            Person employee = new Person(firstName, lastName);
+            int age = employee.Age(dob);
+            MessageBox.Show($"Имя: {firstName}\nФамилия: {lastName}\nВозраст: {age} лет");
         }
     }
 }
